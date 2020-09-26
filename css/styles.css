@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    float: right;
+}
+.texto {
+    margin-top: 20em;
+}
+
+
+h3,
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+h1 {
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ESTILOS PARA LA PÁGINA PRINCIPAL */
+
+/* Maquetación general de las secciones */
+
+
+
+.hobbies {
+    margin-top: 6em;
+}
+
+.proyectos {
+    margin-top: 6em;
+}
+.texto {
+    
+    margin-bottom: -20em;
+    margin-top: 6em;
+    margin-left: 2em;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+    
+}
+
+
+
+
+.imagen {
+    position: relative;
+    width: 400px;
+    float: right;
+    
+   
+}
+
+.documental {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+
+.documental iframe,
+.documental object,
+.documental embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#contacto {
+    background-color: rgb(246, 242, 239);
+}
+#contacto > div > div.redes {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto > div > div.redes > a {
+    margin: 1.5em;
+    margin-top: 5em;
+}
+
+#contacto > div > div.redes > a > i {
+    font-size: 3em;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#contacto > div > div.redes > a > i:hover {
+    color: gray;
+}
+
+#contacto > ul {
+    padding-left: 1.5em;
+}
+
+
+#social {
+    background-color: rgb(248, 248, 248);
+}
+
+   
+
+
+
+section > h1 {
+    font-size: 5em;
+    margin: 0;
+    text-align: left;
+}
+
+a {
+    color: grey;
+}
+
+h1,
+h2,
+p {
+    margin: 1em 0;
+}
+
+/* Maquetación del menú */
+
+#menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-size: 0.9em
+}
+
+#menu > ul {
+    height: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+#menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+/* Maquetación de la primera sección */ 
+
+#icon {
+    background-color:  rgb(248, 248, 248);
+    width: auto;
+    margin-top: -1em;
+    align-items: center;
+
+}
+
+
+
+    
+
+#icon > div {
+    display:flex;
+    margin-top: 6em;
+    text-align: left;
+    position: absolute;
+    margin-top: 1em;
+    
+    
+}
+
+#icon > div > div {
+    flex: 50%;
+}
+
+#icon > div > div:last-child {
+    margin-left: 1em;
+    
+}
+
+
+@keyframes slider3 {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    55% {
+        left: -100%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    85% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/* Maquetación de la segunda sección */
+
+#work {
+    background-color: rgb(246, 242, 239);
+}
+#work > div.galeria > div {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 1px;
+  
+}
+
+
+#work > div.galeria > div > figure {
+    flex: 15%;
+    padding: 1em;
+    position: relative; 
+    
+}
+
+#work > div.galeria > div > figure > figcaption{
+  background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 0;
+    transition-duration: 0.5s;
+      
+}
+#work > div.galeria > div > figure:hover > figcaption{
+    opacity: 0.8;
+    
+}
+
+#work > div.galeria > div > figure > img {
+    box-shadow: 5px 5px 5px #CCC;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 3px;
+    
+
+}
+
+header > p > a {
+    color: black;
+    text-decoration: none;
+}
+
+#galeria {
+    min-height: 100vh;
+    width: 80%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#galeria > div {
+    display: block;
+    overflow: hidden;
+}
+
+#galeria > div > div {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+
+#galeria > div > div > figure {
+    width: 20%;
+    float: left;
+    position: relative;
+    
+    /* Ponemos el position: relative para después poner el figcaption con position: absolute por encima */
+
+}
+
+#galeria > div > div > figure > img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    15% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    55% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+  
+    
+
+ 
